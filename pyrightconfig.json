@@ -1,13 +1,7 @@
 {
-  "include": ["."],
-  "extraPaths": ["."],
+  "include": ["**/*.py"],
+  "extraPaths": ["E:/learningAgent"],
   "pythonVersion": "3.13",
-  "venvPath": ".",
-  "venv": "venv",
-  "executionEnvironments": [
-    {
-      "root": ".",
-      "extraPaths": ["."]
-    }
-  ]
+  "venvPath": "E:/learningAgent",
+  "venv": "venv"
 }

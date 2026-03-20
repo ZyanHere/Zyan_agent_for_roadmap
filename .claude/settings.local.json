@@ -2,7 +2,11 @@
   "permissions": {
     "allow": [
       "Bash(python main.py)",
-      "Bash(./venv/Scripts/python.exe main.py)"
+      "Bash(./venv/Scripts/python.exe main.py)",
+      "Bash(pip list:*)",
+      "Bash(pip install:*)",
+      "Bash(python run.py)",
+      "Bash(venv/Scripts/python.exe -c \"import sys; print\\(sys.executable\\)\")"
     ]
   }
 }
