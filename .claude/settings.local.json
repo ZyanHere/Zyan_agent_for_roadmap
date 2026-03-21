@@ -6,7 +6,14 @@
       "Bash(pip list:*)",
       "Bash(pip install:*)",
       "Bash(python run.py)",
-      "Bash(venv/Scripts/python.exe -c \"import sys; print\\(sys.executable\\)\")"
+      "Bash(venv/Scripts/python.exe -c \"import sys; print\\(sys.executable\\)\")",
+      "Bash(python -c \"from dotenv import load_dotenv; import os; load_dotenv\\(\\); k = os.getenv\\(''ANTHROPIC_API_KEY'', ''''\\); print\\(f''Key loaded: {bool\\(k and k != \"\"your-api-key-here\"\"\\)}''\\); print\\(f''Length: {len\\(k\\)}''\\)\")",
+      "Bash(python -c \"from dotenv import load_dotenv; import os; load_dotenv\\(\\); k = os.getenv\\(''ANTHROPIC_API_KEY'', ''''\\); print\\(f''Key loaded: {len\\(k\\) > 10}''\\); print\\(f''Length: {len\\(k\\)}''\\); print\\(f''Starts with: {k[:10]}''\\)\")",
+      "Bash(python -c \"f=open\\(''.env'',''rb''\\); print\\(repr\\(f.read\\(\\)\\)\\); f.close\\(\\)\")",
+      "Bash(python -c \"from pathlib import Path; p = Path\\(''E:/learningAgent/graph.py''\\).parent / ''.env''; print\\(p\\); print\\(p.exists\\(\\)\\); from dotenv import load_dotenv; r = load_dotenv\\(p\\); print\\(f''loaded: {r}''\\); import os; print\\(f''key: {repr\\(os.getenv\\(\"\"ANTHROPIC_API_KEY\"\"\\)\\)[:20]}''\\)\")",
+      "Bash(python -c \"from pathlib import Path; from dotenv import load_dotenv; import os; load_dotenv\\(Path\\(''E:/learningAgent/.env''\\)\\); v = os.getenv\\(''ANTHROPIC_API_KEY''\\); print\\(repr\\(v\\)\\); print\\(type\\(v\\)\\); print\\(len\\(v\\) if v else 0\\)\")",
+      "Bash(python -c \"from dotenv import dotenv_values; vals = dotenv_values\\(''.env''\\); print\\(vals\\)\")",
+      "Bash(python -c \"import os; v = os.environ.get\\(''ANTHROPIC_API_KEY''\\); print\\(f''System env: {repr\\(v\\)}''\\)\")"
     ]
   }
 }

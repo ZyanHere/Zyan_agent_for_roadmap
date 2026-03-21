@@ -1,3 +1,27 @@
+# Core LangGraph + LangChain ecosystem
+
 langgraph
+langchain
 langchain-core
+
+# Anthropic LLM
+
+langchain-anthropic
+anthropic
+
+# FastAPI server (backend bridge)
+
+fastapi
+uvicorn[standard]
+
+# Data validation / models
+
 pydantic
+
+# Environment variables
+
+python-dotenv
+
+# Optional (useful for debugging / dev)
+
+typing-extensions

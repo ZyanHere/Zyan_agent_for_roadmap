@@ -1,7 +1,0 @@
-{
-  "include": ["**/*.py"],
-  "extraPaths": ["E:/learningAgent"],
-  "pythonVersion": "3.13",
-  "venvPath": "E:/learningAgent",
-  "venv": "venv"
-}
